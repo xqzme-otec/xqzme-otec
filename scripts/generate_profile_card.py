@@ -25,7 +25,7 @@ ART_COLS = 49
 INFO_X = 570
 VALUE_X = 690
 INFO_Y = 222
-INFO_STEP = 36
+INFO_STEP = 31
 # Advance width of Menlo/Consolas is ~0.602em.
 CHAR_WIDTH = 0.602
 
@@ -33,7 +33,9 @@ PROFILE_ROWS = [
     ("name", "Daniil Vishnevskii"),
     ("host", f"github.com/{USER}"),
     ("location", "Innopolis, Russia"),
+    ("education", "Innopolis University"),
     ("focus", "ML Engineer / Computer Vision"),
+    ("languages", "Python / Java / C++ / C"),
     ("ml", "PyTorch / scikit-learn / XGBoost"),
     ("vision", "OpenCV"),
     ("data", "Pandas / NumPy / SQL"),
@@ -118,7 +120,7 @@ def main() -> None:
             )
     cursor_x = round(30 + text_width(PROMPT, 15) + 9)
     parts += [
-        text(INFO_X, 566, TAGLINE, "#74d7e8", 14),
+        text(INFO_X, 576, TAGLINE, "#74d7e8", 14),
         '<path d="M30 611H1070" stroke="#334155"/>',
         text(30, 643, PROMPT, "#74d7e8", 15),
         f'<rect x="{cursor_x}" y="629" width="9" height="17" fill="#c8e5eb">'
